@@ -368,7 +368,7 @@ ul img {
     height: 5%;
 }
 
-@media only screen and (min-width: 1441px) {
+@media (min-width: 1441px) {
 
     .profile,
     .experience,
@@ -382,7 +382,7 @@ ul img {
     }
 }
 
-@media only screen and (min-width: 1150px) and (max-width: 1440px) {
+@media (min-width: 1150px) and (max-width: 1440px) {
 
     .profile,
     .experience,
@@ -397,7 +397,7 @@ ul img {
 
 }
 
-@media only screen and (min-width: 950px) and (max-width: 1149px) {
+@media (min-width: 950px) and (max-width: 1149px) {
 
     .profile,
     .experience,
@@ -412,7 +412,7 @@ ul img {
 
 }
 
-@media only screen and (max-width: 949px) {
+@media (max-width: 949px) {
 
     .profile,
     .experience,

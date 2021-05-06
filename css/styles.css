@@ -412,7 +412,7 @@ ul img {
 
 }
 
-@media (max-width: 949px) {
+@media (max-width: 650px) {
 
     .profile,
     .experience,
@@ -423,6 +423,10 @@ ul img {
     .certifications,
     .GetinTouch {
         width: 80%;
+    }
+
+    .body {
+        background-color: red;
     }
 
 

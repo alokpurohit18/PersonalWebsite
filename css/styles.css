@@ -412,7 +412,7 @@ ul img {
 
 }
 
-@media (max-width: 650px) {
+@media screen and (max-width: 650px) {
 
     .profile,
     .experience,

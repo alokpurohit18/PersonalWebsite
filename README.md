@@ -1,2 +1,2 @@
 # PersonalWebsite
-My personal interactive resume website
+My personal resume website.

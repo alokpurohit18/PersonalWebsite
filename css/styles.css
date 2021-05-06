@@ -396,3 +396,34 @@ ul img {
     }
 
 }
+
+@media only screen and (min-width: 950px) and (max-width: 1149px) {
+
+    .profile,
+    .experience,
+    .education,
+    .skills,
+    .languages,
+    .projects,
+    .certifications,
+    .GetinTouch {
+        width: 75%;
+    }
+
+}
+
+@media only screen and (max-width: 949px) {
+
+    .profile,
+    .experience,
+    .education,
+    .skills,
+    .languages,
+    .projects,
+    .certifications,
+    .GetinTouch {
+        width: 80%;
+    }
+
+
+}

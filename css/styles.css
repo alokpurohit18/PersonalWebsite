@@ -238,11 +238,19 @@ ul img {
     text-decoration: none;
 }
 
+.projects-container,
+.bottom-container,
+.experience-container,
+.skills-container {
+    background-color: #F3EFE0;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
 .image {
     display: inline-block;
     position: relative;
     width: 45%;
-    height: 231px;
     margin: 2%;
 }
 
@@ -256,9 +264,10 @@ ul img {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 96%;
     background: rgba(0, 0, 0, 0.6);
     color: #ffffff;
+    font-size: 100%;
     font-family: 'Merriweather', serif;
     display: flex;
     flex-direction: column;
@@ -297,15 +306,6 @@ ul img {
 .image__description {
     font-size: 1.25em;
     margin-top: 0.25em;
-}
-
-.projects-container,
-.bottom-container,
-.experience-container,
-.skills-container {
-    background-color: #F3EFE0;
-    padding-top: 1%;
-    padding-bottom: 1%;
 }
 
 .btn {
@@ -366,4 +366,33 @@ ul img {
 .footer-link img {
     width: 5%;
     height: 5%;
+}
+
+@media only screen and (min-width: 1441px) {
+
+    .profile,
+    .experience,
+    .education,
+    .skills,
+    .languages,
+    .projects,
+    .certifications,
+    .GetinTouch {
+        width: 60%;
+    }
+}
+
+@media only screen and (min-width: 1150px) and (max-width: 1440px) {
+
+    .profile,
+    .experience,
+    .education,
+    .skills,
+    .languages,
+    .projects,
+    .certifications,
+    .GetinTouch {
+        width: 70%;
+    }
+
 }

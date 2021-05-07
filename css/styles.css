@@ -371,11 +371,30 @@ ul img {
 .navbar-container {
     overflow: hidden;
     position: fixed;
+    animation-name: animation;
+    animation-duration: 1000ms;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    transform-origin: top center;
     width: 10%;
     right: 3%;
-    top: 5%;
+    top: 4%;
     border-radius: 10px;
     display: none;
+}
+
+@keyframes animation {
+    0% {
+        transform: rotateX(-90deg) translateY(45px);
+    }
+
+    60% {
+        transform: translateX(60deg);
+    }
+
+    100% {
+        transform: rotateX(0deg) translateY(0px);
+    }
 }
 
 menu button {

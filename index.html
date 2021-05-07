@@ -28,8 +28,41 @@
 
     <main>
         <div class="middle-container">
+            <menu>
+                <div>
+                    <button id="menuButton" onclick="openMenu()">≡</button>
+                </div>
+
+                <div id="menu" class="navbar-container">
+                    <div class="navbar-item"><a href="#profile">Profile</a></div>
+                    <div class="navbar-item"><a href="#experience">Experience</a></div>
+                    <div class="navbar-item"><a href="#education">Education</a></div>
+                    <div class="navbar-item"><a href="#skills">Skills</a></div>
+                    <div class="navbar-item"><a href="#languages">Languages</a></div>
+                    <div class="navbar-item"><a href="#projects">Projects</a></div>
+                    <div class="navbar-item"><a href="#certifications">Certification</a></div>
+                    <div class="navbar-item"><a href="#contact-details">Contact</a></div>
+                </div>
+
+                <script type="text/javascript">
+                    var menuToggle = 0;
+
+                    function openMenu() {
+                        let menu = document.getElementById("menu");
+                        if (menuToggle === 0) {
+                            menu.style.display = "block";
+                            menuToggle = 1;
+                        }
+                        else {
+                            menu.style.display = "none";
+                            menuToggle = 0;
+                        }
+                    }
+                </script>
+            </menu>
+
             <section>
-                <div class="profile">
+                <div id="profile" class="profile">
                     <h2>Hello!</h2>
                     <h2>I am a Programmer, Problem Solver and Creative Web Developer.</h2>
                     <img class="my-image" src="./media/alok.png" alt="my-image">
@@ -44,7 +77,7 @@
             </section>
 
             <section class="experience-container">
-                <div class="experience">
+                <div id="experience" class="experience">
                     <h2>Experience.</h2>
                     <h3>"Never trust a computer you can’t throw out a window." – Steve Wozniak</h3>
                     <div class="experience-row">
@@ -134,7 +167,7 @@
             </section>
 
             <section>
-                <div class="education">
+                <div id="education" class="education">
                     <h2>Education.</h2>
                     <h3>“An investment in knowledge pays the best interest” – Benjamin Franklin</h3>
                     <div class="experience-row">
@@ -217,7 +250,7 @@
             </section>
 
             <section class="skills-container">
-                <div class="skills">
+                <div id="skills" class="skills">
                     <h2>Skills.</h2>
                     <h3>“Many of life’s failures are people who did not realize how close they were to success when they
                         gave up.” – Thomas A.Edison</h3>
@@ -364,7 +397,7 @@
             </section>
 
             <section>
-                <div class="languages">
+                <div id="languages" class="languages">
                     <h2>Languages.</h2>
                     <h3>"Successful cult memes induce intense social interaction behaviour between cult members. This
                         trips the attention detectors" – Keith Henson</h3>
@@ -408,7 +441,7 @@
             </section>
 
             <section class="projects-container">
-                <div class="projects">
+                <div id="projects" class="projects">
                     <h2>Projects.</h2>
                     <h3>“ The whole secret of a successful life is to find out what is one’s destiny to do,
                         and then to do it. ” – Henry Ford</h3>
@@ -471,7 +504,7 @@
             </section>
 
             <section>
-                <div class="certifications">
+                <div id="certifications" class="certifications">
                     <h2>Certifications.</h2>
                     <h3>“Learning never exhausts the mind.” – Leonardo da Vinci</h3>
                     <h4> -->Click on the certificate to view it<-- </h4>
@@ -541,7 +574,7 @@
 
     <footer>
         <div class="bottom-container">
-            <div class="GetinTouch">
+            <div id="contact-details" class="GetinTouch">
                 <h2>Contact Details.</h2>
                 <h3>“Never love anyone who treats you like you're ordinary.” – Oscar Wilde</h3>
                 <h4>Like to code? Love coffee? If yes, then get in touch with me!</h4>

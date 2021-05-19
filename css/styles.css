@@ -172,7 +172,7 @@ ul img {
 
 .projects,
 .certifications,
-.GetinTouch {
+.contacts {
     width: 60%;
     margin: 3% auto 5% auto;
     line-height: 2;
@@ -234,7 +234,7 @@ ul img {
 
 .projects a,
 .certifications a,
-.GetinTouch a {
+.contacts a {
     text-decoration: none;
 }
 
@@ -437,7 +437,7 @@ menu button:hover {
     .languages,
     .projects,
     .certifications,
-    .GetinTouch {
+    .contacts {
         width: 60%;
     }
 }
@@ -451,7 +451,7 @@ menu button:hover {
     .languages,
     .projects,
     .certifications,
-    .GetinTouch {
+    .contacts {
         width: 70%;
     }
 
@@ -466,7 +466,7 @@ menu button:hover {
     .languages,
     .projects,
     .certifications,
-    .GetinTouch {
+    .contacts {
         width: 75%;
     }
 
@@ -481,7 +481,7 @@ menu button:hover {
     .languages,
     .projects,
     .certifications,
-    .GetinTouch {
+    .contacts {
         width: 80%;
     }
 

@@ -86,7 +86,7 @@ ul img {
     overflow: hidden;
     position: fixed;
     animation-name: animation;
-    animation-duration: 500ms;
+    animation-duration: 750ms;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
     transform-origin: top center;

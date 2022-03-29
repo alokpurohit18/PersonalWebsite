@@ -1,606 +1,1017 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
     <title>Alok Rajpurohit - Web Developer</title>
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="icon" href="./media/icon.ico">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap"
-        rel="stylesheet">
-</head>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="icon" href="./media/icon.ico" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <!-- Header Section -->
     <header>
-        <div class="top-container">
-            <img class="top-cloud" src="./media/cloud.png" alt="cloud-img">
-            <h1>Alok Rajpurohit</h1>
-            <h2>
-                <a class="location-icon" target="_blank" href="https://goo.gl/maps/mNnmpaA18pphMx489"><img
-                        src="./media/location.png" alt="location-icon"></a>
-                Mumbai, India.
-            </h2>
-            <img class="bottom-cloud" src="./media/cloud.png" alt="cloud-img">
-        </div>
+      <div class="top-container">
+        <img class="top-cloud" src="./media/looo.png" alt="cloud-img" />
+        <h1>Alok Rajpurohit</h1>
+        <h2>
+          <a
+            class="location-icon"
+            target="_blank"
+            href="https://goo.gl/maps/mNnmpaA18pphMx489"
+            ><img src="./media/location.png" alt="location-icon"
+          /></a>
+          Mumbai, India.
+        </h2>
+        <img class="bottom-cloud" src="./media/looo.png" alt="cloud-img" />
+      </div>
     </header>
 
     <!-- Middle Section -->
     <main>
-        <div class="middle-container">
-            <!-- Menu Section -->
-            <menu>
-                <div>
-                    <button id="menuButton" onclick="openMenu()">≡</button>
+      <div class="middle-container">
+        <!-- Menu Section -->
+        <menu>
+          <div>
+            <button id="menuButton" onclick="openMenu()">≡</button>
+          </div>
+
+          <div id="menu" class="navbar-container">
+            <div class="navbar-item"><a href="#profile">Profile</a></div>
+            <div class="navbar-item"><a href="#experience">Experience</a></div>
+            <div class="navbar-item"><a href="#education">Education</a></div>
+            <div class="navbar-item"><a href="#skills">Skills</a></div>
+            <div class="navbar-item"><a href="#languages">Languages</a></div>
+            <div class="navbar-item"><a href="#projects">Projects</a></div>
+            <div class="navbar-item">
+              <a href="#publications">Publications</a>
+            </div>
+            <div class="navbar-item">
+              <a href="#certifications">Certifications</a>
+            </div>
+            <div class="navbar-item">
+              <a href="#contact-details">Contact</a>
+            </div>
+          </div>
+
+          <script type="text/javascript">
+            var menuToggle = 0;
+
+            function openMenu() {
+              let menu = document.getElementById("menu");
+              if (menuToggle === 0) {
+                menu.style.display = "block";
+                menuToggle = 1;
+              } else {
+                menu.style.display = "none";
+                menuToggle = 0;
+              }
+            }
+          </script>
+        </menu>
+
+        <!-- Profile Section -->
+        <section>
+          <div id="profile" class="profile">
+            <h2>Hello!</h2>
+            <h2>I am a Programmer, Developer and a Problem Solver.</h2>
+            <img
+              class="my-image"
+              src="https://media-exp1.licdn.com/dms/image/C5603AQHkSzwqx_nWlQ/profile-displayphoto-shrink_400_400/0/1645349671571?e=2147483647&v=beta&t=sDz3utUmYV7hs8Jza2FRUntZDdUzY8aL6t_5ZMpfyF0"
+              alt="my-image"
+            />
+            <p class="intro">
+              I am an all-round Computer Engineer. I am a programmer with good
+              techinque and knowledge of front-end development. I love structure
+              and order and I also stand for quality. I love spending time on
+              fixing little details and optimizing web apps. Some of my
+              favourite technologies are HTML, CSS, Bootstrap, JavaScript,
+              Python and Java. I love to work with ReactJS. I like working in a
+              team as you learn much faster in a team. I also love coffee!
+            </p>
+          </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="experience-container">
+          <div id="experience" class="experience">
+            <h2>Experience.</h2>
+            <h3>
+              "Never trust a computer you can’t throw out a window." – Steve
+              Wozniak
+            </h3>
+            <div class="experience-row">
+              <div class="company-name">
+                <img src="./media/jio.png" alt="Jio-logo" />
+                <h4>Reliance Jio</h4>
+                <p>Jun 2021 - Sep 2021</p>
+              </div>
+              <div class="job-description">
+                <h4>Internship - Cloud Game Developer</h4>
+                <p>
+                  Part of the team responsible for developing and maintaining
+                  the Jio Games Platform and all the sub-divisions in it. The
+                  main focus of my internship was the development of the cloud
+                  gaming portal/platform and development of original HTML5 games
+                  for the same. Developed an entire page/module of the cloud
+                  gaming portal completely by myself. Created a new design for
+                  the cloud gaming portal completely by myself.
+                </p>
+                <p>
+                  <a
+                    class="location-icon"
+                    target="_blank"
+                    href="https://goo.gl/maps/mNnmpaA18pphMx489"
+                    ><img src="./media/location.png" alt="location-icon"
+                  /></a>
+                  <span class="location-name">Mumbai</span>
+                  <span class="divider">|</span>
+                  <a href="https://www.jio.com/" target="_blank"
+                    >Company Website</a
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="experience-row">
+              <div class="company-name">
+                <img src="./media/olcademy.png" alt="olcademy-logo" />
+                <h4>Olcademy</h4>
+                <p>May 2021 - Aug 2021</p>
+              </div>
+              <div class="job-description">
+                <h4>Internship - Web Developer</h4>
+                <p>
+                  I was a part of the UI/UX team at the organization. We worked
+                  on a live project i.e., the organization’s Web
+                  Application/Portal. We worked on fixing the existing bugs in
+                  the UI/UX of the website. We also worked on redesigning and
+                  optimizing the organization's website to make it visually
+                  engaging and interesting. I was also promoted to UI/UI Team’s
+                  lead for the last 1 month of my internship after the top
+                  management was impressed by my performance.
+                </p>
+                <p>
+                  <a
+                    class="location-icon"
+                    target="_blank"
+                    href="https://goo.gl/maps/mNnmpaA18pphMx489"
+                    ><img src="./media/location.png" alt="location-icon"
+                  /></a>
+                  <span class="location-name">Mumbai</span>
+                  <span class="divider">|</span>
+                  <a href="https://www.olcademy.com/" target="_blank"
+                    >Company Website</a
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="experience-row">
+              <div class="company-name">
+                <img src="./media/acm.png" alt="acm-logo" />
+                <h4>ACM MPSTME</h4>
+                <p>Jul 2019 - Mar 2020</p>
+              </div>
+              <div class="job-description">
+                <h4>Part Time - Technical Executive</h4>
+                <p>
+                  Taught C language to junior students at a workshop conducted
+                  by the organization.Worked on various projects for MPSTME
+                  college and built sofware, websites and apps in collaboration
+                  with heads of the Technical Department.
+                </p>
+                <p>
+                  <a
+                    class="location-icon"
+                    target="_blank"
+                    href="https://goo.gl/maps/mNnmpaA18pphMx489"
+                    ><img src="./media/location.png" alt="location-icon"
+                  /></a>
+                  <span class="location-name">Mumbai</span>
+                  <span class="divider">|</span>
+                  <a href="https://mpstme.acm.org/#slide=1" target="_blank"
+                    >Company Website</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Education Section -->
+        <section>
+          <div id="education" class="education">
+            <h2>Education.</h2>
+            <h3>
+              “An investment in knowledge pays the best interest” – Benjamin
+              Franklin
+            </h3>
+            <div class="education-row">
+              <div class="company-name">
+                <img src="./media/nmims.png" alt="nmims-logo" />
+                <h4>NMIMS University</h4>
+                <p>Jul 2018 - Mar 2022</p>
+              </div>
+              <div class="job-description">
+                <h4>B. Tech, Computer Engineering, CGPA - 3.45/4 .</h4>
+                <p>
+                  Studied courses like Object Oriented Programming, Data
+                  Structures, Digital Logic Design, Computer Networks,
+                  Algorithms, Software Engineering, Unix Programming and
+                  Artificial Intelligence. Participated in Taqneeq (college
+                  technology fest) and organised SemiCode (college hackathon).
+                </p>
+                <p>
+                  <a
+                    class="location-icon"
+                    target="_blank"
+                    href="https://goo.gl/maps/mNnmpaA18pphMx489"
+                    ><img src="./media/location.png" alt="location-icon"
+                  /></a>
+                  <span class="location-name">Mumbai</span>
+                  <span class="divider">|</span>
+                  <a href="https://nmims.edu/" target="_blank"
+                    >University Website</a
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="education-row">
+              <div class="company-name education-pace">
+                <img src="./media/pace.png" alt="pace-logo" />
+                <h4>Pace Junior College</h4>
+                <p>Jun 2016 - Mar 2018</p>
+              </div>
+              <div class="job-description">
+                <h4>12th, 2018, H.S.C, Science, Marks - 70.36% .</h4>
+                <p>
+                  Prepared for various college entrance exams including JEE and
+                  also studied relevant courses like Complete C++ Programming,
+                  Microprocessors and Microcontrollers. Also captained my
+                  college cricket team in the inter college tournament ant our
+                  college fest.
+                </p>
+                <p>
+                  <a
+                    class="location-icon"
+                    target="_blank"
+                    href="https://goo.gl/maps/mNnmpaA18pphMx489"
+                    ><img src="./media/location.png" alt="location-icon"
+                  /></a>
+                  <span class="location-name">Mumbai</span>
+                  <span class="divider">|</span>
+                  <a
+                    href="https://www.pacejuniorsciencecollege.com/"
+                    target="_blank"
+                    >College Website</a
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="education-row">
+              <div class="company-name">
+                <img src="./media/singhania.png" alt="singhania-logo" />
+                <h4>Smt. Sulocahanadevi Singhania School</h4>
+              </div>
+              <div class="job-description">
+                <h4>10th, 2016, I.C.S.E, Marks - 95.40% .</h4>
+                <p>
+                  Studied all the fundamental subjects like Science, Maths,
+                  History and Computer Applications. Also won Award of
+                  Distinction in Computer Skills from the University of New
+                  South Wales, Australia. Also represented my school and unit in
+                  various intra and inter school football and cricket
+                  championships and won many awards in the same.
+                </p>
+                <p>
+                  <a
+                    class="location-icon"
+                    target="_blank"
+                    href="https://goo.gl/maps/mNnmpaA18pphMx489"
+                    ><img src="./media/location.png" alt="location-icon"
+                  /></a>
+                  <span class="location-name">Mumbai</span>
+                  <span class="divider">|</span>
+                  <a href="https://singhaniaschool.org/" target="_blank"
+                    >School Website</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills-container">
+          <div id="skills" class="skills">
+            <h2>Skills.</h2>
+            <h3>
+              “Many of life’s failures are people who did not realize how close
+              they were to success when they gave up.” – Thomas A.Edison
+            </h3>
+            <div class="skill-container-1">
+              <ul style="list-style-type: none">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Bootstrap</li>
+                <li>JavaScript</li>
+                <li>JQuery</li>
+                <li>ReactJS</li>
+                <li>Node.js</li>
+                <li>PHP</li>
+                <li>Java</li>
+                <li>Python</li>
+              </ul>
+            </div>
+
+            <div class="skill-container-2">
+              <ul style="list-style-type: none">
+                <li>
+                  <span class="skill-stars"
+                    ><img src="./media/star.png" alt="star-icon" /><img
+                      src="./media/star.png"
+                      alt="star-icon" /><img
+                      src="./media/star.png"
+                      alt="star-icon" /><img
+                      src="./media/star.png"
+                      alt="star-icon" /><img
+                      src="./media/star.png"
+                      alt="star-icon"
+                  /></span>
+                </li>
+                <li>
+                  <span class="skill-stars"
+                    ><img src="./media/star.png" alt="star-icon" /><img
+                      src="./media/star.png"
+                      alt="star-icon" /><img
+                      src="./media/star.png"
+                      alt="star-icon" /><img
+                      src="./media/star.png"
+                      alt="star-icon" /><img
+                      src="./media/star.png"
+                      alt="star-icon"
+                  /></span>
+                </li>
+                <li>
+                  <span class="skill-stars"
+                    ><img src="./media/star.png" alt="star-icon" /><img
+                      src="./media/star.png"
+                      alt="star-icon" /><img
+                      src="./media/star.png"
+                      alt="star-icon" /><img
+                      src="./media/star.png"
+                      alt="star-icon" /><img
+                      src="./media/star.png"
+                      alt="star-icon"
+                  /></span>
+                </li>
+                <li>
+                  <span class="skill-stars"
+                    ><img src="./media/star.png" alt="star-icon" /><img
+                      src="./media/star.png"
+                      alt="star-icon" /><img
+                      src="./media/star.png"
+                      alt="star-icon" /><img
+                      src="./media/star.png"
+                      alt="star-icon" /><img
+                      src="./media/star.png"
+                      alt="star-icon"
+                  /></span>
+                </li>
+                <li>
+                  <span class="skill-stars"
+                    ><img src="./media/star.png" alt="star-icon" /><img
+                      src="./media/star.png"
+                      alt="star-icon" /><img
+                      src="./media/star.png"
+                      alt="star-icon" /><img
+                      src="./media/grey-star.png"
+                      alt="star-icon" /><img
+                      src="./media/grey-star.png"
+                      alt="star-icon"
+                  /></span>
+                </li>
+                <li>
+                  <span class="skill-stars"
+                    ><img src="./media/star.png" alt="star-icon" /><img
+                      src="./media/star.png"
+                      alt="star-icon" /><img
+                      src="./media/star.png"
+                      alt="star-icon" /><img
+                      src="./media/star.png"
+                      alt="star-icon" /><img
+                      src="./media/grey-star.png"
+                      alt="star-icon"
+                  /></span>
+                </li>
+                <li>
+                  <span class="skill-stars"
+                    ><img src="./media/star.png" alt="star-icon" /><img
+                      src="./media/star.png"
+                      alt="star-icon" /><img
+                      src="./media/star.png"
+                      alt="star-icon" /><img
+                      src="./media/star.png"
+                      alt="star-icon" /><img
+                      src="./media/grey-star.png"
+                      alt="star-icon"
+                  /></span>
+                </li>
+                <li>
+                  <span class="skill-stars"
+                    ><img src="./media/star.png" alt="star-icon" /><img
+                      src="./media/star.png"
+                      alt="star-icon" /><img
+                      src="./media/star.png"
+                      alt="star-icon" /><img
+                      src="./media/grey-star.png"
+                      alt="star-icon" /><img
+                      src="./media/grey-star.png"
+                      alt="star-icon"
+                  /></span>
+                </li>
+                <li>
+                  <span class="skill-stars"
+                    ><img src="./media/star.png" alt="star-icon" /><img
+                      src="./media/star.png"
+                      alt="star-icon" /><img
+                      src="./media/star.png"
+                      alt="star-icon" /><img
+                      src="./media/star.png"
+                      alt="star-icon" /><img
+                      src="./media/grey-star.png"
+                      alt="star-icon"
+                  /></span>
+                </li>
+                <li>
+                  <span class="skill-stars"
+                    ><img src="./media/star.png" alt="star-icon" /><img
+                      src="./media/star.png"
+                      alt="star-icon" /><img
+                      src="./media/star.png"
+                      alt="star-icon" /><img
+                      src="./media/star.png"
+                      alt="star-icon" /><img
+                      src="./media/grey-star.png"
+                      alt="star-icon"
+                  /></span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="skill-container-3" style="width: 25%">
+              <ul style="list-style-type: none">
+                <li>C++</li>
+                <li>SQL</li>
+                <li>LaTex</li>
+                <li>Data Structures</li>
+                <li>Algorithms</li>
+                <li>Git</li>
+                <li>MySQL</li>
+                <li>MS Office</li>
+                <li>Unix/Linux</li>
+                <li>Shell Scripting</li>
+              </ul>
+            </div>
+
+            <div class="skill-container-4">
+              <ul style="list-style-type: none">
+                <li>
+                  <span class="skill-stars"
+                    ><img src="./media/star.png" alt="star-icon" /><img
+                      src="./media/star.png"
+                      alt="star-icon" /><img
+                      src="./media/star.png"
+                      alt="star-icon" /><img
+                      src="./media/star.png"
+                      alt="star-icon" /><img
+                      src="./media/grey-star.png"
+                      alt="star-icon"
+                  /></span>
+                </li>
+                <li>
+                  <span class="skill-stars"
+                    ><img src="./media/star.png" alt="star-icon" /><img
+                      src="./media/star.png"
+                      alt="star-icon" /><img
+                      src="./media/star.png"
+                      alt="star-icon" /><img
+                      src="./media/star.png"
+                      alt="star-icon" /><img
+                      src="./media/grey-star.png"
+                      alt="star-icon"
+                  /></span>
+                </li>
+                <li>
+                  <span class="skill-stars"
+                    ><img src="./media/star.png" alt="star-icon" /><img
+                      src="./media/star.png"
+                      alt="star-icon" /><img
+                      src="./media/star.png"
+                      alt="star-icon" /><img
+                      src="./media/star.png"
+                      alt="star-icon" /><img
+                      src="./media/grey-star.png"
+                      alt="star-icon"
+                  /></span>
+                </li>
+                <li>
+                  <span class="skill-stars"
+                    ><img src="./media/star.png" alt="star-icon" /><img
+                      src="./media/star.png"
+                      alt="star-icon" /><img
+                      src="./media/star.png"
+                      alt="star-icon" /><img
+                      src="./media/star.png"
+                      alt="star-icon" /><img
+                      src="./media/grey-star.png"
+                      alt="star-icon"
+                  /></span>
+                </li>
+                <li>
+                  <span class="skill-stars"
+                    ><img src="./media/star.png" alt="star-icon" /><img
+                      src="./media/star.png"
+                      alt="star-icon" /><img
+                      src="./media/star.png"
+                      alt="star-icon" /><img
+                      src="./media/star.png"
+                      alt="star-icon" /><img
+                      src="./media/grey-star.png"
+                      alt="star-icon"
+                  /></span>
+                </li>
+                <li>
+                  <span class="skill-stars"
+                    ><img src="./media/star.png" alt="star-icon" /><img
+                      src="./media/star.png"
+                      alt="star-icon" /><img
+                      src="./media/star.png"
+                      alt="star-icon" /><img
+                      src="./media/star.png"
+                      alt="star-icon" /><img
+                      src="./media/grey-star.png"
+                      alt="star-icon"
+                  /></span>
+                </li>
+                <li>
+                  <span class="skill-stars"
+                    ><img src="./media/star.png" alt="star-icon" /><img
+                      src="./media/star.png"
+                      alt="star-icon" /><img
+                      src="./media/star.png"
+                      alt="star-icon" /><img
+                      src="./media/grey-star.png"
+                      alt="star-icon" /><img
+                      src="./media/grey-star.png"
+                      alt="star-icon"
+                  /></span>
+                </li>
+                <li>
+                  <span class="skill-stars"
+                    ><img src="./media/star.png" alt="star-icon" /><img
+                      src="./media/star.png"
+                      alt="star-icon" /><img
+                      src="./media/star.png"
+                      alt="star-icon" /><img
+                      src="./media/star.png"
+                      alt="star-icon" /><img
+                      src="./media/star.png"
+                      alt="star-icon"
+                  /></span>
+                </li>
+                <li>
+                  <span class="skill-stars"
+                    ><img src="./media/star.png" alt="star-icon" /><img
+                      src="./media/star.png"
+                      alt="star-icon" /><img
+                      src="./media/star.png"
+                      alt="star-icon" /><img
+                      src="./media/star.png"
+                      alt="star-icon" /><img
+                      src="./media/star.png"
+                      alt="star-icon"
+                  /></span>
+                </li>
+                <li>
+                  <span class="skill-stars"
+                    ><img src="./media/star.png" alt="star-icon" /><img
+                      src="./media/star.png"
+                      alt="star-icon" /><img
+                      src="./media/star.png"
+                      alt="star-icon" /><img
+                      src="./media/grey-star.png"
+                      alt="star-icon" /><img
+                      src="./media/grey-star.png"
+                      alt="star-icon"
+                  /></span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- Lannguages Section -->
+        <section>
+          <div id="languages" class="languages">
+            <h2>Languages.</h2>
+            <h3>
+              "Successful cult memes induce intense social interaction behaviour
+              between cult members. This trips the attention detectors" – Keith
+              Henson
+            </h3>
+            <div class="languages-container">
+              <ul style="list-style-type: none">
+                <li>English</li>
+                <li>Hindi</li>
+              </ul>
+            </div>
+            <div class="languages-container" style="margin-right: 2%">
+              <ul style="list-style-type: none">
+                <li>
+                  <span class="skill-stars"
+                    ><img src="./media/star.png" alt="star-icon" /><img
+                      src="./media/star.png"
+                      alt="star-icon" /><img
+                      src="./media/star.png"
+                      alt="star-icon" /><img
+                      src="./media/star.png"
+                      alt="star-icon" /><img
+                      src="./media/star.png"
+                      alt="star-icon"
+                  /></span>
+                </li>
+                <li>
+                  <span class="skill-stars"
+                    ><img src="./media/star.png" alt="star-icon" /><img
+                      src="./media/star.png"
+                      alt="star-icon" /><img
+                      src="./media/star.png"
+                      alt="star-icon" /><img
+                      src="./media/star.png"
+                      alt="star-icon" /><img
+                      src="./media/star.png"
+                      alt="star-icon"
+                  /></span>
+                </li>
+              </ul>
+            </div>
+            <div class="languages-container" style="margin-left: 2%">
+              <ul style="list-style-type: none">
+                <li>Marathi</li>
+                <li>German</li>
+              </ul>
+            </div>
+            <div class="languages-container">
+              <ul style="list-style-type: none">
+                <li>
+                  <span class="skill-stars"
+                    ><img src="./media/star.png" alt="star-icon" /><img
+                      src="./media/star.png"
+                      alt="star-icon" /><img
+                      src="./media/star.png"
+                      alt="star-icon" /><img
+                      src="./media/grey-star.png"
+                      alt="star-icon" /><img
+                      src="./media/grey-star.png"
+                      alt="star-icon"
+                  /></span>
+                </li>
+                <li>
+                  <span class="skill-stars"
+                    ><img src="./media/star.png" alt="star-icon" /><img
+                      src="./media/star.png"
+                      alt="star-icon" /><img
+                      src="./media/grey-star.png"
+                      alt="star-icon" /><img
+                      src="./media/grey-star.png"
+                      alt="star-icon" /><img
+                      src="./media/grey-star.png"
+                      alt="star-icon"
+                  /></span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects-container">
+          <div id="projects" class="projects">
+            <h2>Projects.</h2>
+            <h3>
+              “ The whole secret of a successful life is to find out what is
+              one’s destiny to do, and then to do it. ” – Henry Ford
+            </h3>
+            <h4>-->Click on the project to view it<--</h4>
+
+            <a
+              href="https://github.com/alokpurohit18/footstats"
+              target="_blank"
+            >
+              <div class="image">
+                <img
+                  class="image__img"
+                  src="https://github.com/alokpurohit18/footstats/blob/master/screenshots/Player_Stats(1).png?raw=true"
+                  alt="FootStats Screen"
+                />
+                <div class="image__overlay image__overlay--primary">
+                  <div class="image__title">FootStats</div>
+                  <p class="image__description">
+                    A React + Flask app that uses<br />
+                    ML and AI to predict team and player<br />
+                    statistics/attributes in football.
+                  </p>
                 </div>
+              </div>
+            </a>
 
-                <div id="menu" class="navbar-container">
-                    <div class="navbar-item"><a href="#profile">Profile</a></div>
-                    <div class="navbar-item"><a href="#experience">Experience</a></div>
-                    <div class="navbar-item"><a href="#education">Education</a></div>
-                    <div class="navbar-item"><a href="#skills">Skills</a></div>
-                    <div class="navbar-item"><a href="#languages">Languages</a></div>
-                    <div class="navbar-item"><a href="#projects">Projects</a></div>
-                    <div class="navbar-item"><a href="#certifications">Certification</a></div>
-                    <div class="navbar-item"><a href="#contact-details">Contact</a></div>
+            <a
+              href="https://github.com/alokpurohit18/AttendanceManager"
+              target="_blank"
+            >
+              <div class="image">
+                <img
+                  class="image__img"
+                  src="./media/Attendance.png"
+                  alt="AttendanceManager Screen"
+                />
+                <div class="image__overlay image__overlay--primary">
+                  <div class="image__title">Attendace Manager</div>
+                  <p class="image__description">
+                    A web application to help <br />
+                    college students to manage <br />
+                    their attendance.
+                  </p>
                 </div>
+              </div>
+            </a>
 
-                <script type="text/javascript">
-                    var menuToggle = 0;
-
-                    function openMenu() {
-                        let menu = document.getElementById("menu");
-                        if (menuToggle === 0) {
-                            menu.style.display = "block";
-                            menuToggle = 1;
-                        }
-                        else {
-                            menu.style.display = "none";
-                            menuToggle = 0;
-                        }
-                    }
-                </script>
-            </menu>
-
-            <!-- Profile Section -->
-            <section>
-                <div id="profile" class="profile">
-                    <h2>Hello!</h2>
-                    <h2>I am a Programmer, Problem Solver and Creative Web Developer.</h2>
-                    <img class="my-image" src="./media/alok.png" alt="my-image">
-                    <p class="intro">
-                        I am an all-round web developer. I am a programmer with good techinque and knowledge of
-                        front-end development. I love structure and order and I also stand for quality. I love spending
-                        time on fixing little details and optimizing web apps. Some of my favourite technologies are
-                        HTML, CSS, Bootstrap, JavaScript and Java. Also I like working in a team as you learn much
-                        faster in a team. I also love coffee!
-                    </p>
+            <a
+              href="https://github.com/alokpurohit18/KBC---The-Game"
+              target="_blank"
+            >
+              <div class="image">
+                <img
+                  class="image__img"
+                  src="https://github.com/alokpurohit18/QuizTime/blob/master/App%20Screenshots/Main%20Menu.png?raw=true"
+                  alt="KBC Screen"
+                />
+                <div class="image__overlay image__overlay--primary">
+                  <div class="image__title">Quiz Time</div>
+                  <p class="image__description">
+                    A quiz game for the Windows <br />
+                    platform based on the famous <br />
+                    reality show
+                  </p>
                 </div>
+              </div>
+            </a>
+
+            <a
+              href="https://github.com/alokpurohit18/FlyHighTravelPlanner1"
+              target="_blank"
+            >
+              <div class="image">
+                <img
+                  class="image__img"
+                  src="./media/FlyHigh.png"
+                  alt="FlyHigh Screen"
+                />
+                <div class="image__overlay image__overlay--primary">
+                  <div class="image__title">FlyHigh</div>
+                  <p class="image__description">
+                    An application that plans your <br />
+                    travel to perfection to reduce <br />
+                    the cost of the entire trip.
+                  </p>
+                </div>
+              </div>
+            </a>
+
+            <a
+              href="https://github.com/alokpurohit18/MiniOperatingSystem"
+              target="_blank"
+            >
+              <div class="image">
+                <img
+                  class="image__img"
+                  src="./media/Mini_os.png"
+                  alt="Mini_OS Screen"
+                />
+                <div class="image__overlay image__overlay--primary">
+                  <div class="image__title">Mini OS</div>
+                  <p class="image__description">
+                    A Mini Operating System <br />
+                    based on DOS.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </section>
+
+        <!-- Publications Section -->
+        <section>
+            <div id="publications" class="publications">
+              <h2>Publications.</h2>
+              <h3>“If your dreams don’t scare you, they are too small.” -Richard Branson</h3>
+              <h4>-->Click on the publication to view it<--</h4>
+              <a
+                href="https://ieeexplore.ieee.org/abstract/document/9725397"
+                target="_blank"
+              >
+                <div class="image">
+                  <img
+                    class="image__img"
+                    src="./media/pub_2.png"
+                    alt="Publication 1"
+                  />
+                  <div class="image__overlay image__overlay--primary">
+                    <div class="image__title">Serious Games in Education</div>
+                  </div>
+                </div>
+              </a>
+  
+              <a
+                href="https://ieeexplore.ieee.org/abstract/document/9566120"
+                target="_blank"
+              >
+                <div class="image">
+                  <img
+                    class="image__img"
+                    src="./media/pub_1.png"
+                    alt="Publication 2"
+                  />
+                  <div class="image__overlay image__overlay--primary">
+                    <div class="image__title">Development of a<br/>Serious Game</div>
+                  </div>
+                </div>
+              </a>
             </section>
 
-            <!-- Experience Section -->
-            <section class="experience-container">
-                <div id="experience" class="experience">
-                    <h2>Experience.</h2>
-                    <h3>"Never trust a computer you can’t throw out a window." – Steve Wozniak</h3>
-                    <div class="experience-row">
-                        <div class="company-name">
-                            <img src="./media/jio.png" alt="Jio-logo">
-                            <h4>
-                                Reliance Jio
-                            </h4>
-                            <p>Jun 2021 - Sep 2021</p>
-                        </div>
-                        <div class="job-description">
-                            <h4>Internship - Cloud Game Developer</h4>
-                            <p>
-                                Part of the team responsible for developing and maintaining the Jio Games Platform and all the sub-divisions in it. The main focus of my internship was the development of the cloud gaming portal/platform and development of original HTML5 games for the same. Developed an entire page/module of the cloud gaming portal completely by myself. Created a new design for the cloud gaming portal completely by myself.
-                            </p>
-                            <p>
-                                <a class="location-icon" target="_blank"
-                                    href="https://goo.gl/maps/mNnmpaA18pphMx489"><img src="./media/location.png"
-                                        alt="location-icon"></a>
-                                <span class="location-name">Mumbai</span> <span class="divider">|</span> <a
-                                    href="https://www.jio.com/" target="_blank">Company
-                                    Website</a>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="experience-row">
-                        <div class="company-name">
-                            <img src="./media/olcademy.png" alt="olcademy-logo">
-                            <h4>
-                                Olcademy
-                            </h4>
-                            <p>May 2021 - Aug 2021</p>
-                        </div>
-                        <div class="job-description">
-                            <h4>Internship - Web Developer</h4>
-                            <p>
-                                I was a part of the UI/UX team at the organization. We worked on a live project i.e., the organization’s Web Application/Portal. We worked on fixing the existing bugs in the UI/UX of the website. We also worked on redesigning and optimizing the organization's website to make it visually engaging and interesting. I was also promoted to UI/UI Team’s lead for the last 1 month of my internship after the top management was impressed by my performance.
-                            </p>
-                            <p>
-                                <a class="location-icon" target="_blank"
-                                    href="https://goo.gl/maps/mNnmpaA18pphMx489"><img src="./media/location.png"
-                                        alt="location-icon"></a>
-                                <span class="location-name">Mumbai</span> <span class="divider">|</span> <a
-                                    href="https://www.olcademy.com/" target="_blank">Company
-                                    Website</a>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="experience-row">
-                        <div class="company-name">
-                            <img src="./media/acm.png" alt="acm-logo">
-                            <h4>
-                                ACM MPSTME
-                            </h4>
-                            <p>Jul 2019 - Mar 2020</p>
-                        </div>
-                        <div class="job-description">
-                            <h4>Part Time - Technical Executive</h4>
-                            <p>
-                                Taught C language to junior students at a workshop conducted by the
-                                organization.Worked
-                                on various projects for MPSTME college and built sofware, websites and apps in
-                                collaboration with heads of the Technical Department.
-                            </p>
-                            <p>
-                                <a class="location-icon" target="_blank"
-                                    href="https://goo.gl/maps/mNnmpaA18pphMx489"><img src="./media/location.png"
-                                        alt="location-icon"></a>
-                                <span class="location-name">Mumbai</span> <span class="divider">|</span> <a
-                                    href="https://mpstme.acm.org/#slide=1" target="_blank">Company
-                                    Website</a>
-
-                            </p>
-                        </div>
-                    </div>
+        <!-- Certifications Section -->
+        <section>
+          <div class="certifications-container">
+            <div id="certifications" class="certifications">
+              <h2>Certifications.</h2>
+              <h3>“Learning never exhausts the mind.” – Leonardo da Vinci</h3>
+              <h4>-->Click on the certificate to view it<--</h4>
+              <a
+                href="https://www.udemy.com/certificate/UC-d980abdc-ea45-4acf-b1a3-6ed5994c5275/"
+                target="_blank"
+              >
+                <div class="image">
+                  <img
+                    class="image__img"
+                    src="./media/JavaCertificate.png"
+                    alt="Java Certificate"
+                  />
+                  <div class="image__overlay image__overlay--primary">
+                    <div class="image__title">Java Programming Masterclass</div>
+                  </div>
                 </div>
-            </section>
-
-            <!-- Education Section -->
-            <section>
-                <div id="education" class="education">
-                    <h2>Education.</h2>
-                    <h3>“An investment in knowledge pays the best interest” – Benjamin Franklin</h3>
-                    <div class="education-row">
-                        <div class="company-name">
-                            <img src="./media/nmims.png" alt="nmims-logo">
-                            <h4>
-                                NMIMS University
-                            </h4>
-                            <p>Jul 2018 - Mar 2022</p>
-                        </div>
-                        <div class="job-description">
-                            <h4>B. Tech, Computer Engineering, CGPA - 3.45/4 .</h4>
-                            <p>
-                                Studied courses like Object Oriented Programming, Data Structures, Digital Logic Design,
-                                Computer Networks, Algorithms, Software Engineering, Unix
-                                Programming and Artificial Intelligence. Participated in Taqneeq (college technology
-                                fest) and organised SemiCode (college hackathon).
-                            </p>
-                            <p>
-                                <a class="location-icon" target="_blank"
-                                    href="https://goo.gl/maps/mNnmpaA18pphMx489"><img src="./media/location.png"
-                                        alt="location-icon"></a>
-                                <span class="location-name">Mumbai</span> <span class="divider">|</span> <a
-                                    href="https://nmims.edu/" target="_blank">University
-                                    Website</a>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="education-row">
-                        <div class="company-name education-pace">
-                            <img src="./media/pace.png" alt="pace-logo">
-                            <h4>
-                                Pace Junior College
-                            </h4>
-                            <p>Jun 2016 - Mar 2018</p>
-                        </div>
-                        <div class="job-description">
-                            <h4>12th, 2018, H.S.C, Science, Marks - 70.36% .</h4>
-                            <p>
-                                Prepared for various college entrance exams including JEE and also studied relevant
-                                courses like Complete C++ Programming, Microprocessors and Microcontrollers. Also
-                                captained my college cricket team in the inter college tournament ant our college fest.
-                            </p>
-                            <p>
-                                <a class="location-icon" target="_blank"
-                                    href="https://goo.gl/maps/mNnmpaA18pphMx489"><img src="./media/location.png"
-                                        alt="location-icon"></a>
-                                <span class="location-name">Mumbai</span> <span class="divider">|</span> <a
-                                    href="https://www.pacejuniorsciencecollege.com/" target="_blank">College
-                                    Website</a>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="education-row">
-                        <div class="company-name">
-                            <img src="./media/singhania.png" alt="singhania-logo">
-                            <h4>
-                                Smt. Sulocahanadevi Singhania School
-                            </h4>
-                        </div>
-                        <div class="job-description">
-                            <h4>10th, 2016, I.C.S.E, Marks - 95.40% .</h4>
-                            <p>
-                                Studied all the fundamental subjects like Science, Maths, History and Computer
-                                Applications. Also won Award of Distinction in Computer Skills from the University of
-                                New South Wales, Australia. Also represented my school and unit in various intra and
-                                inter school football and cricket championships and won many awards in the same.
-                            </p>
-                            <p>
-                                <a class="location-icon" target="_blank"
-                                    href="https://goo.gl/maps/mNnmpaA18pphMx489"><img src="./media/location.png"
-                                        alt="location-icon"></a>
-                                <span class="location-name">Mumbai</span> <span class="divider">|</span> <a
-                                    href="https://singhaniaschool.org/" target="_blank">School
-                                    Website</a>
-                            </p>
-                        </div>
-                    </div>
+              </a>
+  
+              <a
+                href="https://www.udemy.com/certificate/UC-000cacc9-fe5e-4545-b7f2-ddc9f7598f2a/"
+                target="_blank"
+              >
+                <div class="image">
+                  <img
+                    class="image__img"
+                    src="./media/PythonCertificate.png"
+                    alt="Python Certificate"
+                  />
+                  <div class="image__overlay image__overlay--primary">
+                    <div class="image__title">Python Programming Masterclass</div>
+                  </div>
                 </div>
-            </section>
-
-            <!-- Skills Section -->
-            <section class="skills-container">
-                <div id="skills" class="skills">
-                    <h2>Skills.</h2>
-                    <h3>“Many of life’s failures are people who did not realize how close they were to success when they
-                        gave up.” – Thomas A.Edison</h3>
-                    <div class="skill-container-1">
-                        <ul style="list-style-type: none;">
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>Bootstrap</li>
-                            <li>JavaScript</li>
-                            <li>WordPress</li>
-                            <li>JQuery</li>
-                            <li>Node.js</li>
-                            <li>Java</li>
-                            <li>PHP</li>
-                            <li>Python</li>
-                            <li>C++</li>
-                            <li>ReactJS</li>
-                            <li>SQL</li>
-                        </ul>
-                    </div>
-
-                    <div class="skill-container-2">
-                        <ul style="list-style-type: none;">
-                            <li><span class="skill-stars"><img src="./media/star.png" alt="star-icon"><img
-                                        src="./media/star.png" alt="star-icon"><img src="./media/star.png"
-                                        alt="star-icon"><img src="./media/star.png" alt="star-icon"><img
-                                        src="./media/star.png" alt="star-icon"></span></li>
-                            <li><span class="skill-stars"><img src="./media/star.png" alt="star-icon"><img
-                                        src="./media/star.png" alt="star-icon"><img src="./media/star.png"
-                                        alt="star-icon"><img src="./media/star.png" alt="star-icon"><img
-                                        src="./media/star.png" alt="star-icon"></span></li>
-                            <li><span class="skill-stars"><img src="./media/star.png" alt="star-icon"><img
-                                        src="./media/star.png" alt="star-icon"><img src="./media/star.png"
-                                        alt="star-icon"><img src="./media/star.png" alt="star-icon"><img
-                                        src="./media/star.png" alt="star-icon"></span></li>
-                            <li><span class="skill-stars"><img src="./media/star.png" alt="star-icon"><img
-                                        src="./media/star.png" alt="star-icon"><img src="./media/star.png"
-                                        alt="star-icon"><img src="./media/star.png" alt="star-icon"><img
-                                        src="./media/star.png" alt="star-icon"></span></li>
-                            <li><span class="skill-stars"><img src="./media/star.png" alt="star-icon"><img
-                                        src="./media/star.png" alt="star-icon"><img src="./media/star.png"
-                                        alt="star-icon"><img src="./media/star.png" alt="star-icon"><img
-                                        src="./media/grey-star.png" alt="star-icon"></span></li>
-                            <li><span class="skill-stars"><img src="./media/star.png" alt="star-icon"><img
-                                        src="./media/star.png" alt="star-icon"><img src="./media/star.png"
-                                        alt="star-icon"><img src="./media/star.png" alt="star-icon"><img
-                                        src="./media/grey-star.png" alt="star-icon"></span></li>
-                            <li><span class="skill-stars"><img src="./media/star.png" alt="star-icon"><img
-                                        src="./media/star.png" alt="star-icon"><img src="./media/star.png"
-                                        alt="star-icon"><img src="./media/star.png" alt="star-icon"><img
-                                        src="./media/grey-star.png" alt="star-icon"></span></li>
-                            <li><span class="skill-stars"><img src="./media/star.png" alt="star-icon"><img
-                                        src="./media/star.png" alt="star-icon"><img src="./media/star.png"
-                                        alt="star-icon"><img src="./media/star.png" alt="star-icon"><img
-                                        src="./media/grey-star.png" alt="star-icon"></span></li>
-                            <li><span class="skill-stars"><img src="./media/star.png" alt="star-icon"><img
-                                        src="./media/star.png" alt="star-icon"><img src="./media/star.png"
-                                        alt="star-icon"><img src="./media/star.png" alt="star-icon"><img
-                                        src="./media/grey-star.png" alt="star-icon"></span></li>
-                            <li><span class="skill-stars"><img src="./media/star.png" alt="star-icon"><img
-                                        src="./media/star.png" alt="star-icon"><img src="./media/star.png"
-                                        alt="star-icon"><img src="./media/star.png" alt="star-icon"><img
-                                        src="./media/grey-star.png" alt="star-icon"></span></li>
-                            <li><span class="skill-stars"><img src="./media/star.png" alt="star-icon"><img
-                                        src="./media/star.png" alt="star-icon"><img src="./media/star.png"
-                                        alt="star-icon"><img src="./media/star.png" alt="star-icon"><img
-                                        src="./media/grey-star.png" alt="star-icon"></span></li>
-                            <li><span class="skill-stars"><img src="./media/star.png" alt="star-icon"><img
-                                        src="./media/star.png" alt="star-icon"><img src="./media/star.png"
-                                        alt="star-icon"><img src="./media/grey-star.png" alt="star-icon"><img
-                                        src="./media/grey-star.png" alt="star-icon"></span></li>
-                            <li><span class="skill-stars"><img src="./media/star.png" alt="star-icon"><img
-                                        src="./media/star.png" alt="star-icon"><img src="./media/star.png"
-                                        alt="star-icon"><img src="./media/star.png" alt="star-icon"><img
-                                        src="./media/grey-star.png" alt="star-icon"></span></li>
-                        </ul>
-                    </div>
-
-                    <div class="skill-container-3" style="width: 25%;">
-                        <ul style="list-style-type: none;">
-                            <li>LaTex</li>
-                            <li>Data Structures</li>
-                            <li>Algorithms</li>
-                            <li>Git</li>
-                            <li>MySQL</li>
-                            <li>MS Office</li>
-                            <li>Unix/Linux</li>
-                            <li>Shell Scripting</li>
-                            <li>VS Code</li>
-                            <li>Sublime Text</li>
-                            <li>IntelliJ Idea</li>
-                            <li>Eclipse</li>
-                            <li>PyCharm</li>
-                        </ul>
-                    </div>
-
-                    <div class="skill-container-4">
-                        <ul style="list-style-type: none;">
-                            <li><span class="skill-stars"><img src="./media/star.png" alt="star-icon"><img
-                                        src="./media/star.png" alt="star-icon"><img src="./media/star.png"
-                                        alt="star-icon"><img src="./media/grey-star.png" alt="star-icon"><img
-                                        src="./media/grey-star.png" alt="star-icon"></span></li>
-                            <li><span class="skill-stars"><img src="./media/star.png" alt="star-icon"><img
-                                        src="./media/star.png" alt="star-icon"><img src="./media/star.png"
-                                        alt="star-icon"><img src="./media/star.png" alt="star-icon"><img
-                                        src="./media/grey-star.png" alt="star-icon"></span></li>
-                            <li><span class="skill-stars"><img src="./media/star.png" alt="star-icon"><img
-                                        src="./media/star.png" alt="star-icon"><img src="./media/star.png"
-                                        alt="star-icon"><img src="./media/star.png" alt="star-icon"><img
-                                        src="./media/grey-star.png" alt="star-icon"></span></li>
-                            <li><span class="skill-stars"><img src="./media/star.png" alt="star-icon"><img
-                                        src="./media/star.png" alt="star-icon"><img src="./media/star.png"
-                                        alt="star-icon"><img src="./media/star.png" alt="star-icon"><img
-                                        src="./media/grey-star.png" alt="star-icon"></span></li>
-                            <li><span class="skill-stars"><img src="./media/star.png" alt="star-icon"><img
-                                        src="./media/star.png" alt="star-icon"><img src="./media/star.png"
-                                        alt="star-icon"><img src="./media/star.png" alt="star-icon"><img
-                                        src="./media/grey-star.png" alt="star-icon"></span></li>
-                            <li><span class="skill-stars"><img src="./media/star.png" alt="star-icon"><img
-                                        src="./media/star.png" alt="star-icon"><img src="./media/star.png"
-                                        alt="star-icon"><img src="./media/star.png" alt="star-icon"><img
-                                        src="./media/star.png" alt="star-icon"></span></li>
-                            <li><span class="skill-stars"><img src="./media/star.png" alt="star-icon"><img
-                                        src="./media/star.png" alt="star-icon"><img src="./media/star.png"
-                                        alt="star-icon"><img src="./media/star.png" alt="star-icon"><img
-                                        src="./media/star.png" alt="star-icon"></span></li>
-                            <li><span class="skill-stars"><img src="./media/star.png" alt="star-icon"><img
-                                        src="./media/star.png" alt="star-icon"><img src="./media/star.png"
-                                        alt="star-icon"><img src="./media/star.png" alt="star-icon"><img
-                                        src="./media/grey-star.png" alt="star-icon"></span></li>
-                            <li><span class="skill-stars"><img src="./media/star.png" alt="star-icon"><img
-                                        src="./media/star.png" alt="star-icon"><img src="./media/star.png"
-                                        alt="star-icon"><img src="./media/star.png" alt="star-icon"><img
-                                        src="./media/star.png" alt="star-icon"></span></li>
-                            <li><span class="skill-stars"><img src="./media/star.png" alt="star-icon"><img
-                                        src="./media/star.png" alt="star-icon"><img src="./media/star.png"
-                                        alt="star-icon"><img src="./media/star.png" alt="star-icon"><img
-                                        src="./media/star.png" alt="star-icon"></span></li>
-                            <li><span class="skill-stars"><img src="./media/star.png" alt="star-icon"><img
-                                        src="./media/star.png" alt="star-icon"><img src="./media/star.png"
-                                        alt="star-icon"><img src="./media/star.png" alt="star-icon"><img
-                                        src="./media/star.png" alt="star-icon"></span></li>
-                            <li><span class="skill-stars"><img src="./media/star.png" alt="star-icon"><img
-                                        src="./media/star.png" alt="star-icon"><img src="./media/star.png"
-                                        alt="star-icon"><img src="./media/grey-star.png" alt="star-icon"><img
-                                        src="./media/grey-star.png" alt="star-icon"></span></li>
-                            <li><span class="skill-stars"><img src="./media/star.png" alt="star-icon"><img
-                                        src="./media/star.png" alt="star-icon"><img src="./media/star.png"
-                                        alt="star-icon"><img src="./media/grey-star.png" alt="star-icon"><img
-                                        src="./media/grey-star.png" alt="star-icon"></span></li>
-                        </ul>
-                    </div>
+              </a>
+  
+              <a
+                href="https://coursera.org/share/c6f3c5d4b4d5affa9b32f73c59c67441"
+                target="_blank"
+              >
+                <div class="image">
+                  <img
+                    class="image__img"
+                    src="./media/UnixCertificate.png"
+                    alt="Unix Certificate"
+                  />
+                  <div class="image__overlay image__overlay--primary">
+                    <div class="image__title">Unix Workbench Certification</div>
+                  </div>
                 </div>
-            </section>
-
-            <!-- Lannguages Section -->
-            <section>
-                <div id="languages" class="languages">
-                    <h2>Languages.</h2>
-                    <h3>"Successful cult memes induce intense social interaction behaviour between cult members. This
-                        trips the attention detectors" – Keith Henson</h3>
-                    <div class="languages-container">
-                        <ul style="list-style-type: none;">
-                            <li>English</li>
-                            <li>Hindi</li>
-                        </ul>
-                    </div>
-                    <div class="languages-container" style="margin-right: 2%;">
-                        <ul style="list-style-type: none;">
-                            <li><span class="skill-stars"><img src="./media/star.png" alt="star-icon"><img
-                                        src="./media/star.png" alt="star-icon"><img src="./media/star.png"
-                                        alt="star-icon"><img src="./media/star.png" alt="star-icon"><img
-                                        src="./media/star.png" alt="star-icon"></span></li>
-                            <li><span class="skill-stars"><img src="./media/star.png" alt="star-icon"><img
-                                        src="./media/star.png" alt="star-icon"><img src="./media/star.png"
-                                        alt="star-icon"><img src="./media/star.png" alt="star-icon"><img
-                                        src="./media/star.png" alt="star-icon"></span></li>
-                        </ul>
-                    </div>
-                    <div class="languages-container" style="margin-left: 2%;">
-                        <ul style="list-style-type: none;">
-                            <li>Marathi</li>
-                            <li>German</li>
-                        </ul>
-                    </div>
-                    <div class="languages-container">
-                        <ul style="list-style-type: none;">
-                            <li><span class="skill-stars"><img src="./media/star.png" alt="star-icon"><img
-                                        src="./media/star.png" alt="star-icon"><img src="./media/star.png"
-                                        alt="star-icon"><img src="./media/grey-star.png" alt="star-icon"><img
-                                        src="./media/grey-star.png" alt="star-icon"></span></li>
-                            <li><span class="skill-stars"><img src="./media/star.png" alt="star-icon"><img
-                                        src="./media/star.png" alt="star-icon"><img src="./media/grey-star.png"
-                                        alt="star-icon"><img src="./media/grey-star.png" alt="star-icon"><img
-                                        src="./media/grey-star.png" alt="star-icon"></span></li>
-                        </ul>
-                    </div>
+              </a>
+  
+              <a
+                href="https://www.udemy.com/certificate/UC-fc9b20f7-327e-41a2-bb9a-1a8f87e1074a/"
+                target="_blank"
+              >
+                <div class="image">
+                  <img
+                    class="image__img"
+                    src="./media/LinuxCertificate.png"
+                    alt="Linux Certificate"
+                  />
+                  <div class="image__overlay image__overlay--primary">
+                    <div class="image__title">Master of Linux Command Line</div>
+                  </div>
                 </div>
-            </section>
-
-            <!-- Projects Section -->
-            <section class="projects-container">
-                <div id="projects" class="projects">
-                    <h2>Projects.</h2>
-                    <h3>“ The whole secret of a successful life is to find out what is one’s destiny to do,
-                        and then to do it. ” – Henry Ford</h3>
-                    <h4> -->Click on the project to view it<-- </h4>
-
-                            <a href="https://github.com/alokpurohit18/MiniOperatingSystem" target="_blank">
-                                <div class="image">
-                                    <img class="image__img" src="./media/Mini_os.png" alt="Mini_OS Screen">
-                                    <div class="image__overlay image__overlay--primary">
-                                        <div class="image__title">Mini OS</div>
-                                        <p class="image__description">
-                                            A Mini Operating System <br> based on DOS.
-                                        </p>
-                                    </div>
-                                </div>
-                            </a>
-
-                            <a href="https://github.com/alokpurohit18/AttendanceManager" target="_blank">
-                                <div class="image">
-                                    <img class="image__img" src="./media/Attendance.png" alt="AttendanceManager Screen">
-                                    <div class="image__overlay image__overlay--primary">
-                                        <div class="image__title">Attendace Manager</div>
-                                        <p class="image__description">
-                                            A web application to help <br> college students to manage <br> their
-                                            attendance.
-                                        </p>
-                                    </div>
-                                </div>
-                            </a>
-
-                            <a href="https://github.com/alokpurohit18/KBC---The-Game" target="_blank">
-                                <div class="image">
-                                    <img class="image__img" src="./media/KBC.png" alt="KBC Screen">
-                                    <div class="image__overlay image__overlay--primary">
-                                        <div class="image__title">Quiz Time</div>
-                                        <p class="image__description">
-                                            A quiz game for the Windows <br> platform based on the famous <br> reality show
-                                        </p>
-                                    </div>
-                                </div>
-                            </a>
-
-                            <a href="https://github.com/alokpurohit18/FlyHighTravelPlanner1" target="_blank">
-                                <div class="image">
-                                    <img class="image__img" src="./media/FlyHigh.png" alt="FlyHigh Screen">
-                                    <div class="image__overlay image__overlay--primary">
-                                        <div class="image__title">FlyHigh</div>
-                                        <p class="image__description">
-                                            An application that plans your <br> travel to perfection to reduce <br> the
-                                            cost of
-                                            the entire trip.
-                                        </p>
-                                    </div>
-                                </div>
-                            </a>
-
+              </a>
+  
+              <a
+                href="https://www.udemy.com/certificate/UC-89e6ad6a-d117-4f25-b089-a35583252dd7/"
+                target="_blank"
+              >
+                <div class="image">
+                  <img
+                    class="image__img"
+                    src="./media/BasicWebCertificate.png"
+                    alt="Web Dev Basic"
+                  />
+                  <div class="image__overlay image__overlay--primary">
+                    <div class="image__title">
+                      Bootstrap and PHP Certification
+                    </div>
+                  </div>
                 </div>
-            </section>
-
-            <!-- Certifications Section -->
-            <section>
-                <div id="certifications" class="certifications">
-                    <h2>Certifications.</h2>
-                    <h3>“Learning never exhausts the mind.” – Leonardo da Vinci</h3>
-                    <h4> -->Click on the certificate to view it<-- </h4>
-                            <a href="https://www.udemy.com/certificate/UC-d980abdc-ea45-4acf-b1a3-6ed5994c5275/"
-                                target="_blank">
-                                <div class="image">
-                                    <img class="image__img" src="./media/JavaCertificate.png" alt="Java Certificate">
-                                    <div class="image__overlay image__overlay--primary">
-                                        <div class="image__title">Java Programming Masterclass</div>
-                                    </div>
-                                </div>
-                            </a>
-
-                            <a href="https://www.udemy.com/certificate/UC-000cacc9-fe5e-4545-b7f2-ddc9f7598f2a/"
-                                target="_blank">
-                                <div class="image">
-                                    <img class="image__img" src="./media/PythonCertificate.png"
-                                        alt="Python Certificate">
-                                    <div class="image__overlay image__overlay--primary">
-                                        <div class="image__title">Python Programming Masterclass</div>
-                                    </div>
-                                </div>
-                            </a>
-
-                            <a href="https://coursera.org/share/c6f3c5d4b4d5affa9b32f73c59c67441" target="_blank">
-                                <div class="image">
-                                    <img class="image__img" src="./media/UnixCertificate.png" alt="Unix Certificate">
-                                    <div class="image__overlay image__overlay--primary">
-                                        <div class="image__title">Unix Workbench Certification</div>
-                                    </div>
-                                </div>
-                            </a>
-
-                            <a href="https://www.udemy.com/certificate/UC-fc9b20f7-327e-41a2-bb9a-1a8f87e1074a/"
-                                target="_blank">
-                                <div class="image">
-                                    <img class="image__img" src="./media/LinuxCertificate.png" alt="Linux Certificate">
-                                    <div class="image__overlay image__overlay--primary">
-                                        <div class="image__title">Master of Linux Command Line</div>
-                                    </div>
-                                </div>
-                            </a>
-
-                            <a href="https://www.udemy.com/certificate/UC-89e6ad6a-d117-4f25-b089-a35583252dd7/"
-                                target="_blank">
-                                <div class="image">
-                                    <img class="image__img" src="./media/BasicWebCertificate.png" alt="Web Dev Basic">
-                                    <div class="image__overlay image__overlay--primary">
-                                        <div class="image__title">Bootstrap and PHP Certification</div>
-                                    </div>
-                                </div>
-                            </a>
-
-                            <a href="https://coursera.org/share/b918a6af9850a15b17a207c86a85e41e" target="_blank">
-                                <div class="image">
-                                    <img class="image__img" src="./media/AWS.png" alt="AWS Machine Learning">
-                                    <div class="image__overlay image__overlay--primary">
-                                        <div class="image__title">AWS Machine Learning <br> Certification</div>
-                                    </div>
-                                </div>
-                            </a>
+              </a>
+  
+              <a
+                href="https://coursera.org/share/b918a6af9850a15b17a207c86a85e41e"
+                target="_blank"
+              >
+                <div class="image">
+                  <img
+                    class="image__img"
+                    src="./media/AWS.png"
+                    alt="AWS Machine Learning"
+                  />
+                  <div class="image__overlay image__overlay--primary">
+                    <div class="image__title">
+                      AWS Machine Learning <br />
+                      Certification
+                    </div>
+                  </div>
                 </div>
-            </section>
-        </div>
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
     </main>
 
     <!-- Footer Section -->
     <footer>
-        <div class="bottom-container">
-            <div id="contact-details" class="contacts">
-                <h2>Contact Details.</h2>
-                <h3>“Never love anyone who treats you like you're ordinary.” – Oscar Wilde</h3>
-                <h4>Like to code? Love coffee? If yes, then get in touch with me!</h4>
-                <a class="footer-link" href="https://www.linkedin.com/in/alok-purohit-1941461a3/" target="_blank"><img
-                        src="./media/Linkedin.png" alt="Linkedin Icon"><span>LinkedIn</span></a>
-                <a class="footer-link" href="https://github.com/alokpurohit18" target="_blank"><img
-                        src="./media/GitHub.png" alt="GitHub Icon"><span>GitHub</span></a>
-                <a class="footer-link" href="https://twitter.com/AlokPur32580593" target="_blank"><img
-                        src="./media/Twitter.png" alt="Twitter Icon"><span>Twitter</span></a>
-                <a class="btn" href="mailto:alokpurohit18@gmail.com" target="_blank">CONTACT ME</a>
-                <p>©
-                    <script type="text/javascript">
-                        document.write(new Date().getFullYear());
-                    </script>
-                    Alok Rajpurohit.</p>
-            </div>
+      <div class="bottom-container">
+        <div id="contact-details" class="contacts">
+          <h2>Contact Details.</h2>
+          <h3>
+            “Never love anyone who treats you like you're ordinary.” – Oscar
+            Wilde
+          </h3>
+          <h4>Like to code? Love coffee? If yes, then get in touch with me!</h4>
+          <a
+            class="footer-link"
+            href="https://www.linkedin.com/in/alok-purohit-1941461a3/"
+            target="_blank"
+            ><img src="./media/Linkedin.png" alt="Linkedin Icon" /><span
+              >LinkedIn</span
+            ></a
+          >
+          <a
+            class="footer-link"
+            href="https://github.com/alokpurohit18"
+            target="_blank"
+            ><img src="./media/GitHub.png" alt="GitHub Icon" /><span
+              >GitHub</span
+            ></a
+          >
+          <a
+            class="footer-link"
+            href="https://twitter.com/AlokPur32580593"
+            target="_blank"
+            ><img src="./media/Twitter.png" alt="Twitter Icon" /><span
+              >Twitter</span
+            ></a
+          >
+          <a class="btn" href="mailto:alokpurohit18@gmail.com" target="_blank"
+            >CONTACT ME</a
+          >
+          <p>
+            ©
+            <script type="text/javascript">
+              document.write(new Date().getFullYear());
+            </script>
+            Alok Rajpurohit.
+          </p>
         </div>
+      </div>
     </footer>
-
-</body>
-
+  </body>
 </html>
